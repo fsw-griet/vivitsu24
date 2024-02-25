@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+li{
+    list-style-type: none;
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#header{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: black;
+}
+
+#header img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+#header .griet-logo{
+    margin-right: 30px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#header .griet-logo img{
+    width: 65px;
+    position: relative;
+    top: -7px;
+    right: 11px;
+}
+
+#header .fsw-logo{
+    margin-left: 30px;
+}
+
+/* #header .logo{
+    margin-left: 40px;
+    font-size: 30px;
+    cursor: none;
+} */
+
+#header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#header ul li{
+    margin-left: 20px;
+}
+
+#header ul li.headRegister{
+    cursor: none;
+}
+
+#header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header ul li a:hover, 
+#header ul li a.active{
+    background-color: rgb(0, 183, 255);
+}
+
+section{
+    /* background-color: rgb(0, 143, 199); */
+    /* background-color: rgb(0, 183, 255); */
+    background-color: bisque;
+    z-index: 10;
+}
+
+section #main{
+    color: skyblue;
+    /* font-size: 10vh; */
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: rgb(255, 234, 254); */
+    position: relative;
+}
+
+section #main .title{
+    font-size: 10rem;
+}
+
+section #main .span{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 400px;
+    line-height: 12rem;
+}
+
+section #main .tagline{
+    font-size: 2rem;
+    line-height: 14rem;
+    display: block;
+    height: 250px;
+}
+
+/* ============= Parallax Effect =================== */
+
+/* section #main{
+    background-attachment: scroll;
+} */
+
+section #main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section #main img{
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+}
+
+section #main .sun{
+    top: 20px;
+    width: 300px;
+    margin: auto;
+}
+
+section #main .forest{
+    width: 100%;
+    bottom: 0;
+}
+
+section #main .sea{
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+}
+
+section #main .rock1{
+    left: 0;
+    bottom: 0;
+    width: 35%;
+}
+
+section #main .rock2{
+    right: 0;
+    bottom: 0;
+    width: 35%;
+    /* rotate: 180deg; */
+    transform: scaleX(-1);
+}
+
+
+#highlights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: skyblue; */
+    /* transform: skewY(-4deg); */
+    position: relative;
+    top: -20px;
+}
+
+.highlights-button{
+    cursor: pointer;
+    float: right;
+    margin-bottom: 50px;
+    opacity: 0.6;
+    font-weight: bolder;
+    transition: all ease-in-out 0.2s;
+    /* float: left; */
+}
+
+.highlights-button:hover{
+    opacity: 1;
+}
+
+.highlights-button a{
+    border: 2px solid none;
+    background-color: rgb(8, 84, 155);
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 3rem;
+}
+
+#highlights h1{
+    margin: 80px 0px 20px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* transform: skewY(4deg); */
+}
+
+#highlights ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 10px 0px 10px;
+    /* transform: skewY(4deg); */
+}
+
+#highlights ul li{
+    margin: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 240px;
+    text-align: center;
+}
+
+#highlights ul li img{
+    width: 200px;
+    margin-bottom: 5px;
+    /* background-color: black; */
+}
+
+#problem-statements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    clear: both;
+}
+
+hr{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    height: 3px;
+    background-color: gold;
+    border: none;
+}
+
+#problem-statements h1{
+    margin: 50px 0px 50px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#sponsors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background-color: white;
+    border-radius: 6rem;
+    margin: 50px auto;
+    padding: 60px 0px;
+    padding-bottom: 0px;
+    /* background-color: rgb(255, 107, 107); */
+    /* transform: skewY(-2deg); */
+
+    /* background-color: aqua;*/
+}
+
+#sponsors h2{
+    text-align: center;
+}
+
+#sponsors .title-sponsor, .energy-sponsors,.collaboration, .associate-sponsors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    /* transform: skewY(2deg); */
+}
+
+#sponsors .title-sponsor img{
+    margin-bottom: 30px;
+}
+
+#sponsors img{
+    width: 18rem;
+    height: 10rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    margin: 20px;
+}
+
+#sponsors .other-sponsors{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* transform: skewY(2deg); */
+}
+
+/* #sponsors .other-sponsors .energy-sponsors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 120px;
+    /* width: 30%; 
+}
+
+#sponsors .other-sponsors .associate-sponsors{
+    /* width: 70%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 120px;
+} */
+
+#sponsors .other-sponsors .associate-sponsors ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+#sponsors .other-sponsors .associate-sponsors ul img{
+    width: 10rem;
+    height: 6rem;
+}
+
+#sponsors .other-sponsors .associate-sponsors ul img.reliance{
+    border-radius: 0;
+    width: 15rem;
+}
+
+#sponsors .other-sponsors .associate-sponsors ul img.suntek{
+    width: 16rem;
+}
+
+#sponsors .other-sponsors .associate-sponsors ul img.smart{
+    width: 8.5rem;
+    height: 7.3rem;
+}
+
+/* #sponsors .other-sponsors .associate-sponsors ul li{
+    display: flex;
+    align-items: center;
+} */
+
+/* #sponsors{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+#sponsors h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#sponsors ul{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+/* #sponsors ul li{
+    background-color: whitesmoke;
+    margin: 30px;
+    border-radius: 40px;
+} */
+
+#sponsors ul li img{
+    width: 15rem;
+    height: 10rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+}
+  
+  /* #faqs{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    /* background-color: #027b9a; 
+    /* background: rgb(19 25 51); 
+    width: 100%;
+    
+  }
+
+  #faqs h1{
+    text-align: center;
+  }
+
+  #faqs .faqs-block{
+    margin: 5rem;
+
+  }
+
+  #faqs .faqs-block details{
+    margin: 2rem;
+  }
+
+  #faqs p{
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: larger;
+    /* border-style: outset; 
+    /* border-color: rgb(140, 255, 140); 
+    border-radius: 2rem;
+    padding: 20px;
+    /* transition: all ease-in-out 2ms; 
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+  } */
+
