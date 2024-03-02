@@ -96,21 +96,6 @@ img{
     overflow: hidden;
 }
 
-#team_name{
-    width: 100%;
-    text-align: center;
-    font-size: 250%;
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-    transition: 0.4s;
-}
-
-#team_name:hover{
-    font-size: 300%;
-}
-
-
 #aboutUs #community .organiser .profile img{
     width: 200px;
     filter: grayscale(1);
