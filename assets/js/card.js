@@ -60,9 +60,6 @@ let ps2 = document.getElementById("ps2");
 let ps3 = document.getElementById("ps3");
 let ps4 = document.getElementById("ps4");
 let ps5 = document.getElementById("ps5");
-let ps6 = document.getElementById("ps6");
-let ps7 = document.getElementById("ps7");
-let ps8  = document.getElementById("ps8");
 
 l1.addEventListener("click",()=>{
   ps1.click();
@@ -81,17 +78,6 @@ l4.addEventListener("click",()=>{
 
 l5.addEventListener("click",()=>{
   ps5.click();
-});
-
-l6.addEventListener("click",()=>{
-  ps6.click();
-});
-l7.addEventListener("click",()=>{
-  ps7.click();
-});
-
-l8.addEventListener("click",()=>{
-  ps8.click();
 });
 
 
