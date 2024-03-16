@@ -65,10 +65,10 @@ h1 {
 
 #header {
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px 0;
   background-color: var(--dark-color);
   position: relative;
@@ -76,28 +76,16 @@ h1 {
 }
 
 #header img {
-  width: 70px;
+  width: 85px;
   border-radius: 50%;
 }
 
 #header .griet-logo {
-  margin-right: 30px;
-  background-color: white;
-  padding: 5px;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
-
-#header .griet-logo img {
-  width: 65px;
-  position: relative;
-  top: -7px;
-  right: 11px;
+  /* margin-left: 5rem; */
 }
 
 #header .fsw-logo {
-  margin-left: 30px;
+  /* margin-right: 5rem; */
 }
 
 /* #header .logo{
@@ -111,7 +99,7 @@ h1 {
   align-items: center;
   justify-content: center;
   list-style-type: none;
-  margin-right: 30px;
+  /* margin-right: 30px; */
 }
 
 #header ul li {
@@ -140,7 +128,7 @@ h1 {
 
 section {
   z-index: 10;
-  background-color: bisque;
+  background-color: #027b9a;
 }
 
 section #main {
@@ -154,26 +142,36 @@ section #main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 20px;
 }
 
-section #main .title {
-  font-size: 10rem;
-}
-
-section #main .span {
+section #main .main-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
   font-size: 2rem;
   letter-spacing: 2px;
-  line-height: 12rem;
+  font-weight: bolder;
+  color: var(--light-color);
+  margin-top: -100px;
+}
+
+section #main .main-title .title {
+  margin-top: -20px;
+}
+
+section #main .main-title h2 {
+  font-size: 8rem;
+  letter-spacing: 4px;
   font-weight: bolder;
   color: var(--light-color);
 }
 
-section #main .tagline {
-  font-size: 2rem;
-  line-height: 14rem;
-  display: block;
-  height: 250px;
-  color: var(--light-color);
+section #main .main-title .tagline {
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 /* ============= Parallax Effect =================== */
@@ -182,51 +180,16 @@ section #main .tagline {
     background-attachment: scroll;
 } */
 
-section #main {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-section #main .main-logo {
-  margin-bottom: -50px;
-}
-
 #highlights {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  top: -20px;
-}
-
-.highlights-button {
-  cursor: pointer;
-  float: right;
-  margin-bottom: 50px;
-  opacity: 0.6;
-  font-weight: bolder;
-  transition: all ease-in-out 0.2s;
-  /* float: left; */
-}
-
-.highlights-button:hover {
-  opacity: 1;
-}
-
-.highlights-button a {
-  border: 2px solid none;
-  background-color: rgb(8, 84, 155);
-  border-radius: 10px;
-  padding: 10px;
-  margin-right: 3rem;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  background-color: white;
 }
 
 #highlights h1 {
-  margin: 60px 0px 20px 0px;
+  text-align: center;
+  color: black;
+  margin: 0px 0px 20px 0px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /* transform: skewY(4deg); */
 }
@@ -256,6 +219,23 @@ section #main .main-logo {
   /* background-color: black; */
 }
 
+#highlights .highlights-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+#highlights .highlights-button a {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+}
+
 hr {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -264,10 +244,15 @@ hr {
   border: none;
 }
 
+#problem-statements {
+  background-color: #027b9a;
+  margin-top: 50px;
+}
+
 #problem-statements h1 {
-  margin: 50px 0px 20px 0px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  color: white;
 }
 
 #sponsors {

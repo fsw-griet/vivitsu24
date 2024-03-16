@@ -17,7 +17,10 @@ for (let i = 0; i < bubbles.length; i++) {
 let animationBlock = document.getElementById("background-wrap");
 var myScrollFunc = function () {
   var y = window.scrollY;
-  if (y >= 15) {
+  // width of the screen
+  var x = window.innerWidth;
+
+  if ((y >= 25 && x >= 982) || (y >= 250 && x < 984)) {
     animationBlock.style.display = "none";
   } else {
     animationBlock.style.display = "block";

@@ -76,7 +76,7 @@ img {
 #aboutUs #community {
   display: flex;
   flex-wrap: wrap;
-  gap: 10rem;
+  gap: 8rem;
   align-items: center;
   justify-content: center;
   border: none;

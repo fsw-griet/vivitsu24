@@ -6,15 +6,6 @@
   position: relative;
 }
 
-.title h2 {
-  color: #fff;
-  font-size: 10rem;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  font-family: "Poppins", sans-serif;
-  /* font-family: 'Rajdhani', sans-serif; */
-}
-
 /* 
 .title h2:nth-child(1) {
 	color: transparent;
