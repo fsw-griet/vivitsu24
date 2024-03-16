@@ -436,22 +436,74 @@ hr {
     transition-delay: 1s;
   } */
 
-.container {
-  width: 90%;
+/* .container {
+  width: 100vw;
   margin: auto;
   padding-bottom: 50px;
-}
+} */
 .container h1 {
   text-align: center;
   margin-bottom: 50px;
+  color: white;
 }
 
-.photos img {
-  border-radius: 10px;
-  object-fit: cover;
-  width: 30%;
-  height: 20%;
+.photo-wrapper {
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  overflow: hidden;
+  /* width: 100%; */
+  width: 90vw;
 }
+
+.photo {
+  border-radius: 16px;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+
+  & img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+  }
+
+  &::after {
+      content: "";
+      position: absolute;
+      top: -1rem;
+      bottom: -1rem;
+      left: -16rem;
+      background: linear-gradient(90deg, transparent, white, transparent);
+      width: 16rem;
+      opacity: 0;
+      transform: rotate(6deg);
+  }
+
+  &:hover::after {
+      left: 100%;
+      opacity: 0.15;
+      transition: inset 1s;
+  }
+
+  &:hover {
+      transform: scale(1.1) !important;
+  }
+
+  &.even {
+      transform: rotate(2deg);
+  }
+
+  &:not(.even) {
+      transform: rotate(-2deg);
+  }
+}
+
+
 
 @keyframes fadeIn {
   0% {
