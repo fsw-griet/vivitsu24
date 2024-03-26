@@ -2,7 +2,7 @@
 var words = [
     "24 Hour Hackathon",
     "Artificial Intelligence",
-    "Argumented Reality",
+    "Augumented Reality",
     "Virtual Reality",
     "Machine Learning",
     "Deep Learning",
